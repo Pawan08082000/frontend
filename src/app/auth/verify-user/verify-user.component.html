@@ -1,0 +1,12 @@
+<div *ngIf="this.message">
+  <mat-label class="col alert alert-success" *ngIf="this.message.success">{{
+    this.message.success
+  }}</mat-label>
+  <mat-label class="col alert alert-danger" *ngIf="this.message.error">{{
+    this.message.error
+  }}</mat-label>
+
+  <mat-label class="col alert alert-warning" *ngIf="this.message.warning">{{
+    this.message.warning
+  }}</mat-label>
+</div>
